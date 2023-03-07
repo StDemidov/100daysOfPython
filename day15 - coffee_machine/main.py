@@ -75,7 +75,7 @@ while user_answer != "off":
     if user_answer == 'report':
         report_resources(money)
     elif user_answer != "off":
-        if check_ingredients(user_answer) == True:
+        if check_ingredients(user_answer):
             cash = get_money()
             if cash < MENU[user_answer]['cost']:
                 print("Sorry that's not enough money. Money refunded")
